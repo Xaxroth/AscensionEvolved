@@ -1,5 +1,5 @@
 # AscensionEvolved
-The source code for my contribution to Ascension Evolved.
+The source code for my contribution to Ascension: Evolved.
 # 1.1 Shared Scripts
 
 1.1.1 Team12Player.cpp & Team12Player.h
