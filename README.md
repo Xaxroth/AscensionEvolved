@@ -38,7 +38,7 @@ The actual mutations that the player picks up in the game. It stores multiple in
 
 The class all eggs in the game inherit from. The MeleeAttack component checks if the target hit is an egg or not, if true, the actor that inherits from the egg script will take damage. Once the health of the egg is zero, it gathers the instance of the player character and increases its speed.
 
-# 2.0 Blueprints
+# 2 Blueprints
 
 2.1 BPA_MonsterSpitter
 
