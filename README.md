@@ -1,6 +1,6 @@
 # AscensionEvolved
 The source code for my contribution to Ascension Evolved.
-1.1 Shared Scripts
+# 1.1 Shared Scripts
 
 1.1.1 Team12Player.cpp & Team12Player.h
 
@@ -10,7 +10,7 @@ Collaboration effort with Anton Vassepov. Originally this was the base controlle
 
 Collaboration effort with Anton Vassepov. The game mode class which our custom game mode base is built upon. Features a list of all possible mutations and a timer that tracks the in-game time. Controls the different states of the game. I was responsible for the mutation list, as well as the implementable blueprint function that the designers would use to check for game overs through blueprints.
 
-1.2 AI & Components
+# 1.2 AI & Components
 
 1.2.1 Monster.cpp & Monster.h
 
@@ -25,7 +25,7 @@ Spawned by the Monster script, the spit-projectile shot by the enemy is a physic
 
 The melee weapon of the player. When the player releases the attack button, it calls SetHitBoxLocation() which creates a hitbox in front of the player. This will follow the camera’s forward vector. As this method is called, another method is called “WeaponSwing()”, which enables the hitbox temporarily and sets the damage. After a set duration, the hitbox deactivates and the weapon goes on cooldown.
 
-1.3 Mutations & Destructibles
+# 1.3 Mutations & Destructibles
 
 1.3.1 MutationActor.cpp + MutationActor.h
 
@@ -39,7 +39,7 @@ The actual mutations that the player picks up in the game. It stores multiple in
 
 The class all eggs in the game inherit from. The MeleeAttack component checks if the target hit is an egg or not, if true, the actor that inherits from the egg script will take damage. Once the health of the egg is zero, it gathers the instance of the player character and increases its speed.
 
-2.0 Blueprints
+# 2.0 Blueprints
 
 2.1 BPA_MonsterSpitter
 
