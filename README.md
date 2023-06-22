@@ -20,8 +20,7 @@ The main enemy for the game uses C++ for its behavior. The main control for the 
 
 Spawned by the Monster script, the spit-projectile shot by the enemy is a physics-based actor which destroys itself upon collision with anything. If it collides with the player, it will find the PlayerStats component attached to them, and deal damage. Upon being spawned during the Shooting state of the enemy, the size of the projectile is randomly set, and a force is then applied upon BeginPlay() in the direction of the player.
 
-
-1.1.3 MeleeAttack.cpp & MeleeAttack.h
+1.2.3 MeleeAttack.cpp & MeleeAttack.h
 
 The melee weapon of the player. When the player releases the attack button, it calls SetHitBoxLocation() which creates a hitbox in front of the player. This will follow the camera’s forward vector. As this method is called, another method is called “WeaponSwing()”, which enables the hitbox temporarily and sets the damage. After a set duration, the hitbox deactivates and the weapon goes on cooldown.
 
