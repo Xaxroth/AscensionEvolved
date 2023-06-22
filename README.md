@@ -39,12 +39,12 @@ The actual mutations that the player picks up in the game. It stores multiple in
 
 The class all eggs in the game inherit from. The MeleeAttack component checks if the target hit is an egg or not, if true, the actor that inherits from the egg script will take damage. Once the health of the egg is zero, it gathers the instance of the player character and increases its speed.
 
-1.2 Blueprints
+2.0 Blueprints
 
-1.2.1 BPA_MonsterSpitter
+2.1 BPA_MonsterSpitter
 
 Animation blueprint for the monster spitter. It is hooked up using a state-machine which is controlled by an enum that matches the state of the monster in its inherited Monster.cpp class. As the monster enters a state in the .cpp file, that enum value is read by the animation blueprint and used to enter, or exit different states such as idle, attack and death.
 
-1.2.2 BPA_PlayerArms
+2.2 BPA_PlayerArms
 
 Similar to BPA_MonsterSpitter, this one had an enum made in the blueprint which always matched the enumeration defined in the .cpp file for the Player. The difference between these two animation blueprints is that the enumeration for the player is handled through the input and not read directly through the .cpp file.
